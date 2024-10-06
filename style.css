@@ -1,0 +1,72 @@
+body {
+    font-size: calc(90 / 1474 * 100vw);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    text-shadow: 0 0 calc(5 / 1474 * 100vw) rgba(0, 0, 0, 0.5);
+    height: 99vh;
+    width: 99vw;
+    margin: 0 auto;
+    padding: 0 auto;
+    background-repeat: no-repeat;
+}
+
+#options {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+    font-size: 2vw;
+    color: black;
+    display: none; /* Initially hidden */
+}
+
+.option-button {
+    margin: 1vw;
+    padding: 1vw 2vw;
+    font-size: 2vw;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.option-button:hover {
+    background-color: lightgray;
+}
+
+#achievement-box {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: fixed;
+    width: 45vw;
+    height: 20vh;
+    left: 1vw;
+    top: 75vh;
+    padding: 1vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    border-radius: 1vh;
+    box-shadow: 0 0 3vh rgba(0, 0, 0, 0.5), 0 0 20px rgba(0, 255, 0, 0.7); /* Green aura */
+    transition: bottom 1s ease-in-out;
+}
+
+#achievement-icon {
+    margin-right: 1vw;
+    width: 5vw;
+}
+
+#achievement-text {
+    flex-grow: 1;
+    font-size: 2vw;
+    text-align: center;
+}

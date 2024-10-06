@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visual Novel Game</title>
+    
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
+    <style>
+        body {
+            background-image: url(jane_eyre.png);
+        }
+        #play {
+            display: block;
+            margin: calc(10 / 1474 * 100vw) calc(10 / 787 * 100vh);
+            padding: calc(10 / 1474 * 100vw) calc(10 / 787 * 100vh);
+            background-color: #000000;
+            color: #ffffff;
+            text-align: center;
+            cursor: pointer;
+        }
+    </style>
+
+</head>
+<body>
+    Jane Eyre Visual Novel Game
+    <h5 style="width: 70vw; font-size: 2vw; color: white; text-shadow: 0 0 calc(70 / 1474 * 100vw) white; background-color: black; opacity: 0.7;">This game is intended to depict Charlotte Bronte's 1848 novel's main character—Jane Eyre. As you maneuver through the various challenges that Jane Eyre experienced, you are met with excruciatingly difficult choices that Jane had to make in her story. You must think in the perspective of the Victorian Era in order to descend from oppression into independence. Every mistake you make turns you slightly more into the story's greatest victim: Bertha mason. </h5>
+    <div id="play">
+        <div onclick="startGame()">Start Game</div>
+    </div>
+
+    <script>
+        function startGame() {
+            window.location.href = 'redroom/drawingroom.html';
+        }
+    </script>
+</body>
+</html>
